@@ -1,0 +1,33 @@
+$color-blue: hsl(228, 45%, 44%);
+$color-violet: hsl(256, 26%, 20%);
+$color-violet-dark: hsl(270, 9%, 17%);
+$color-grey: hsl(216, 30%, 68%);
+$color-grey-light: hsl(0, 0%, 98%);
+$color-grey-dark: hsl(273, 4%, 51%);
+$color-white: #fff;
+
+$font-primary: Karla; // 400
+$font-secondary: DM Serif Display; // 400 700
+
+////////////////////
+/// MIXINS
+@mixin topBorderSmall {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    width: 15rem;
+    height: 1rem;
+    border-bottom: 0.1rem solid $color-grey-dark;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+@mixin gridCenter {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

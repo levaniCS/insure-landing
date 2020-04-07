@@ -1,0 +1,14 @@
+.violet {
+  color: $color-violet !important;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.grey {
+  width: 100%;
+  font-family: $font-primary;
+  color: $color-grey !important;
+}
